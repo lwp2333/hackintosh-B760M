@@ -132,6 +132,8 @@
 			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
+			<key>ClearTaskSwitchBit</key>
+			<false/>
 			<key>DevirtualiseMmio</key>
 			<true/>
 			<key>DisableSingleUser</key>
@@ -461,7 +463,7 @@
 				<key>Comment</key>
 				<string>V1.2</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -920,13 +922,13 @@
 			<key>HibernateMode</key>
 			<string>Auto</string>
 			<key>HibernateSkipsPicker</key>
-			<false/>
+			<true/>
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>InstanceIdentifier</key>
 			<string></string>
 			<key>LauncherOption</key>
-			<string>Full</string>
+			<string>System</string>
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
@@ -966,26 +968,7 @@
 			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
-				<key>Name</key>
-				<string>CustomOS</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
-				<key>TextMode</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowSetDefault</key>
@@ -1144,7 +1127,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 agdpmod=pikera  alcid=13 -ctrsmt</string>
+				<string>ipc_control_port_options=0 keepsyms=1 agdpmod=pikera  alcid=13 -ctrsmt</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1208,37 +1191,6 @@
 		<true/>
 		<key>CustomMemory</key>
 		<false/>
-		<key>DataHub</key>
-		<dict>
-			<key>ARTFrequency</key>
-			<integer>0</integer>
-			<key>BoardProduct</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
-			<key>BoardRevision</key>
-			<data>CQ==</data>
-			<key>DevicePathsSupported</key>
-			<integer>0</integer>
-			<key>FSBFrequency</key>
-			<integer>0</integer>
-			<key>InitialTSC</key>
-			<integer>0</integer>
-			<key>PlatformName</key>
-			<string></string>
-			<key>SmcBranch</key>
-			<data></data>
-			<key>SmcPlatform</key>
-			<data>ajEzNwAAAAA=</data>
-			<key>SmcRevision</key>
-			<data></data>
-			<key>StartupPowerEvents</key>
-			<integer>0</integer>
-			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
-			<key>SystemSerialNumber</key>
-			<string>C02TV0JYHX87</string>
-			<key>SystemUUID</key>
-			<string>1859BBA5-912A-4B5B-B650-6EFBB34AE181</string>
-		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
@@ -1246,7 +1198,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C027245014NJG36UE</string>
+			<string>C02703100GUJG36JC</string>
 			<key>ProcessorType</key>
 			<integer>3841</integer>
 			<key>ROM</key>
@@ -1258,66 +1210,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02TV0JYHX87</string>
+			<string>C02T4DZKHX87</string>
 			<key>SystemUUID</key>
-			<string>1859BBA5-912A-4B5B-B650-6EFBB34AE181</string>
-		</dict>
-		<key>SMBIOS</key>
-		<dict>
-			<key>BIOSReleaseDate</key>
-			<string>10/05/2023</string>
-			<key>BIOSVendor</key>
-			<string></string>
-			<key>BIOSVersion</key>
-			<string>2020.41.1.0.0</string>
-			<key>BoardAssetTag</key>
-			<string>Base Board Asset Tag</string>
-			<key>BoardLocationInChassis</key>
-			<string>Part Component</string>
-			<key>BoardManufacturer</key>
-			<string></string>
-			<key>BoardProduct</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
-			<key>BoardSerialNumber</key>
-			<string>C027245014NJG36UE</string>
-			<key>BoardType</key>
-			<integer>10</integer>
-			<key>BoardVersion</key>
-			<string>iMacPro1,1</string>
-			<key>ChassisAssetTag</key>
-			<string>Asset Tag#</string>
-			<key>ChassisManufacturer</key>
-			<string></string>
-			<key>ChassisSerialNumber</key>
-			<string>C02TV0JYHX87</string>
-			<key>ChassisType</key>
-			<integer>13</integer>
-			<key>ChassisVersion</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
-			<key>FirmwareFeatures</key>
-			<data>PvWP/QgAAAA=</data>
-			<key>FirmwareFeaturesMask</key>
-			<data>P/+f/wgAAAA=</data>
-			<key>PlatformFeature</key>
-			<integer>32</integer>
-			<key>ProcessorType</key>
-			<integer>3841</integer>
-			<key>SmcVersion</key>
-			<data></data>
-			<key>SystemFamily</key>
-			<string>iMac</string>
-			<key>SystemManufacturer</key>
-			<string></string>
-			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
-			<key>SystemSKUNumber</key>
-			<string>System SKU#</string>
-			<key>SystemSerialNumber</key>
-			<string>C02TV0JYHX87</string>
-			<key>SystemUUID</key>
-			<string>1859BBA5-912A-4B5B-B650-6EFBB34AE181</string>
-			<key>SystemVersion</key>
-			<string>1.0</string>
+			<string>C01AA0E4-7F98-435E-BDEE-3274DF3CBE45</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1627,6 +1522,8 @@
 				<string>RuntimeCode</string>
 			</dict>
 		</array>
+		<key>Unload</key>
+		<array/>
 	</dict>
 </dict>
 </plist>
